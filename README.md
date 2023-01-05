@@ -11,6 +11,8 @@ The add-in does 3 major things to help with your writing
 * `Translate` foreign language into English
 *  `Reboot` service is to reboot REST API server and reconnect to ChatGPT if connection is lost.
 
+![image](https://user-images.githubusercontent.com/88595845/210734401-409f3387-7f03-42b5-ae94-288027c4ee76.png)
+
 ## Getting Started
 ### Prerequisites
 
