@@ -3,6 +3,8 @@
 
 This add-in is meant just for fun and learning. Do not use it for production. It takes advantage of an unofficial ChatGPT API it only operates in "Developer mode" and could break or stop working at any time. You should be reasonably comfortable with terminal, as setup is a bit fussy and the server has to often be restarted given the current ChatGPT interest.
 
+[Watch Demo](https://youtu.be/mExg3o3p_fQ)
+
 ## Features
 The add-in does 3 major things to help with your writing
 
