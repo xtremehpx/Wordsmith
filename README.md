@@ -3,8 +3,6 @@
 
 This add-in is meant just for fun and learning. Do not use it for production. It takes advantage of an unofficial ChatGPT API it only operates in "Developer mode" and could break or stop working at any time. You should be reasonably comfortable with terminal, as setup is a bit fussy and the server has to often be restarted given the current ChatGPT interest.
 
-[Watch Demo](https://youtu.be/mExg3o3p_fQ)
-
 ## Features
 The add-in does 3 major things to help with your writing
 
@@ -12,6 +10,8 @@ The add-in does 3 major things to help with your writing
 * `Extract` key facts from your writing and formate into bullet items
 * `Translate` foreign language into English
 *  `Reboot` service is to reboot REST API server and reconnect to ChatGPT if connection is lost.
+
+[Watch Demo](https://youtu.be/mExg3o3p_fQ)
 
 ![image](https://user-images.githubusercontent.com/88595845/210734401-409f3387-7f03-42b5-ae94-288027c4ee76.png)
 
