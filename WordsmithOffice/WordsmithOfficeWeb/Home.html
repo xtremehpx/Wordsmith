@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Wordsmith - Your Personal Writing Coach</title>
+
+    <script src="Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="Scripts/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:  -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <script src="Home.js" type="text/javascript"></script>
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Button.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/MessageBanner.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- For Office UI Fabric Core, go to https://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+
+    <!-- To enable the offline use of Office UI Fabric Core, use: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    
+    <!--https://github.com/lukehaas/css-loaders-->
+
+</head>
+
+    <!-- Office UI Fabric JS and it's components are no longer actively supported. Please see https://aka.ms/PnP-OfficeFabricReact for recommended Patterns and Practices -->
+    <!-- <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css"> -->
+
+<body class="ms-Fabric" dir="ltr">
+    <div id="content-main">        
+            <div class="ms-font-xl ms-fontColor-neutralTertiary">Select text to get started</div>
+            <p class="ms-font-m-plus ms-fontColor-neutralTertiary" id="template-description">
+                Wordsmith uses OpenAI to improve your writing. </p>
+            <br />
+
+        <button class="Button Button--primary" id="polish">
+            <img src="Images/polish.png" alt="Polish" border="0" />
+        </button>
+        <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+        <span class="Button-label" id="polish-button-text">Polish Writing</span>
+        <span class="Button-description" id="polish-button-desc">Polish the selected</span>
+        <br />
+
+        <button class="Button Button--primary" id="resume">
+            <img src="Images/resume.png" alt="Resume" border="0" />
+        </button>
+        <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+        <span class="Button-label" id="resume-button-text">Create Resume Bulletins</span>
+        <span class="Button-description" id="resume-button-desc"></span>
+        <br />
+
+        <button class="Button Button--primary" id="english">
+            <img src="Images/translation.png" alt="Translation" border="0" />
+        </button>
+        <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+        <span class="Button-label" id="english-button-text">Translate into English</span>
+        <span class="Button-description" id="english-button-desc">Translate selected words into English</span>
+        <br />
+
+        <button class="Button Button--primary" id="reboot">
+            <img src="Images/reboot.png" alt="Reboot Service" border="0" />
+        </button>
+        <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+        <span class="Button-label" id="reboot-button-text">Reboot Service</span>
+        <span class="Button-description" id="reboot-button-desc">Reboot service if connection to OpenAI is lost</span>
+        <br />
+
+        <div id="ret">
+            <div class="loader"></div>
+            <p>Please be patient, working hard on the request...</p>
+        </div>
+        <br />
+    </div>
+
+    <div class="footer">
+        <div class="ms-Grid ms-bgColor-themeSecondary">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12"> <div class="ms-font-xl ms-fontColor-white">Powered by OpenAI ChatGPT</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Component used for displaying notifications -->
+    <div class="MessageBanner" id="notification-popup">
+        <div class="MessageBanner-content">
+            <div class="MessageBanner-text">
+                <div class="MessageBanner-clipper">
+                    <div class="ms-font-m-plus ms-fontWeight-semibold" id="notification-header"></div>
+                    <div class="ms-font-m ms-fontWeight-semilight" id="notification-body"></div>
+                </div>
+            </div>
+            <button class="MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+            <div class="MessageBanner-action"></div>
+        </div>
+        <button class="MessageBanner-close"> <i class="ms-Icon ms-Icon--ChromeClose"></i> </button>
+    </div>
+</body>
+</html>
