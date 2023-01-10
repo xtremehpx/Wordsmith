@@ -27,7 +27,7 @@ The add-in does 3 major things to help with your writing
 
 * Clone this repository into directory of your choice. 
 ```git 
-git clone https://github.com/frederickk/chatgpt-figma-plugin.git
+git clone https://github.com/xtremehpx/Wordsmith.git
 ```
 There are two projects in this repo, the first one, `WordsmithGpt` is a nodejs project that hosts a REST API server to enable communication to ChatGPT server and the second, `WordsmithOffice`, is the Add-in project. The reason for two project is due to Microsoft Web Add-in project lacks the support for "real" nodejs application. If you know how to create `real` nodejs app for Office Add-in, drop me a message.
 
